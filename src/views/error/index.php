@@ -1,3 +1,4 @@
-<?php
+<div class="content">
 
-echo "page not found";
+    Page not found
+</div>
