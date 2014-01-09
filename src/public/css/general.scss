@@ -1,0 +1,100 @@
+@import url(http://fonts.googleapis.com/css?family=Nobile:400,400italic,700,700italic);
+$headerFooterC: #000000;
+$contentC: #FFFFFF;
+$navItemC: #1452A8;
+$blue: 	#2B4E7E;
+$navFontC:white;
+$nacFont: 'Nobile', sans-serif;
+
+
+body{
+
+  h1,h2,h3,h4,h5{
+    color:$navItemC;
+    font-family: $nacFont;
+  }
+  header{
+    background:$headerFooterC;
+    .navbar{
+      padding:35px 50px 0px;
+      border-bottom: solid 5px $navItemC;
+
+      ul{
+        display: inline-block;
+        list-style-type: none;
+        margin:0px;
+        float: left;
+        li{
+          display: inline-block;
+          margin-right:15px;
+          a{
+            display: inline-block;
+            padding:10px 25px;
+            background-color: $navItemC;
+            color:$navFontC;
+            border-top-right-radius: 3px;
+            border-top-left-radius: 3px;
+            font-family: $nacFont;
+            font-size:18px;
+
+          }
+          a:hover{
+            text-decoration: none;
+            background-color: #4882D3;
+          }
+        }
+      }
+    }
+    .sign-in-container{
+      display: inline-block;
+      float: right;
+
+      .sign-in-form{
+        color:white;
+      }
+    }
+  }
+  .content-container{
+    padding-top:85px;
+    .main{
+      padding:30px 30px 30px;
+    }
+    .lower{
+      display: inline-block;
+      background-color: $blue;
+      margin-bottom:-10px;
+      padding:10px 10px 10px;
+      width:100%;
+
+      .box{
+        background-color:white;
+        border:solid 4px $headerFooterC;
+        padding:0px;
+        border-radius: 6px;
+        margin:10px;
+        display: inline-block !important;
+        width:32%;
+        min-height: 260px;
+        a{
+          display: inline-block;
+          min-height: inherit;
+          padding:0px 20px 25px;
+          color:black;
+          width: 100%;
+        }
+        a:hover{
+          background-color: #E2EAF6;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  footer{
+    background-color: $headerFooterC;
+    padding:40px 25px;
+    .footer-text{
+      color:$navFontC;
+    }
+  }
+}

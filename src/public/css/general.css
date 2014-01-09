@@ -1,51 +1,67 @@
-
-header{
-    height:60px;
-    background-color:#000000;
-}
-
-footer{
-    height:100px;
-    background-color:#A3B6C5;
-    padding-left:30px;
-    padding-bottom:30px;
-
-}
-
-#content-container{
-    height:400px;
-    background-color:#FC4000;
-    padding:30px;
-
-}
-.content{
-    background-color:#A3B6C5;
-    color:black;
-    padding:15px;
-
-}
-
-div{
-    padding-top:25px;
-}
-
-li{
-    display:inline-block;
-    margin-right:15px;
-    color:white;
-}
-
-a{
-    display:inline-block;
-    padding:15px;
-    background-color: black;
-    text-decoration: none;
-    color:white;
-}
-a:hover{
-    background-color:gray;
-}
-a:visited{
-    color:white;
-}
-
+@import url(http://fonts.googleapis.com/css?family=Nobile:400,400italic,700,700italic);
+body h1, body h2, body h3, body h4, body h5 {
+  color: #1452a8;
+  font-family: "Nobile", sans-serif; }
+body header {
+  background: black; }
+  body header .navbar {
+    padding: 35px 50px 0px;
+    border-bottom: solid 5px #1452a8; }
+    body header .navbar ul {
+      display: inline-block;
+      list-style-type: none;
+      margin: 0px;
+      float: left; }
+      body header .navbar ul li {
+        display: inline-block;
+        margin-right: 15px; }
+        body header .navbar ul li a {
+          display: inline-block;
+          padding: 10px 25px;
+          background-color: #1452a8;
+          color: white;
+          border-top-right-radius: 3px;
+          border-top-left-radius: 3px;
+          font-family: "Nobile", sans-serif;
+          font-size: 18px; }
+        body header .navbar ul li a:hover {
+          text-decoration: none;
+          background-color: #4882D3; }
+  body header .sign-in-container {
+    display: inline-block;
+    float: right; }
+    body header .sign-in-container .sign-in-form {
+      color: white; }
+body .content-container {
+  padding-top: 85px; }
+  body .content-container .main {
+    padding: 30px 30px 30px; }
+  body .content-container .lower {
+    display: inline-block;
+    background-color: #2b4e7e;
+    margin-bottom: -10px;
+    padding: 10px 10px 10px;
+    width: 100%; }
+    body .content-container .lower .box {
+      background-color: white;
+      border: solid 4px black;
+      padding: 0px;
+      border-radius: 6px;
+      margin: 10px;
+      display: inline-block !important;
+      width: 32%;
+      min-height: 260px; }
+      body .content-container .lower .box a {
+        display: inline-block;
+        min-height: inherit;
+        padding: 0px 20px 25px;
+        color: black;
+        width: 100%; }
+      body .content-container .lower .box a:hover {
+        background-color: #E2EAF6;
+        text-decoration: none; }
+body footer {
+  background-color: black;
+  padding: 40px 25px; }
+  body footer .footer-text {
+    color: white; }
