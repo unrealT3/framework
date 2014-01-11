@@ -67,7 +67,6 @@ class Router {
                 return false;
             }
         }else if(isset($controller)){
-
             if($this->fileLoader->checkFileExists($controller, 'controller')){
                 $this->fileLoader->loadControllerFile($controller);
                 $this->fileLoader->loadModelFile($controller);

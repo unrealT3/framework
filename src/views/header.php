@@ -14,9 +14,9 @@
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <ul>
-            <li><a href="home">Home</a></li>
-            <li><a href="help">Help</a></li>
-            <li><a href="login">Login</a></li>
+            <li><a href="<?php echo BASEURL . 'home';?>">Home</a></li>
+            <li><a href="<?php echo BASEURL . 'help';?>">Help</a></li>
+            <li><a href="<?php echo BASEURL . 'login';?>">Login</a></li>
         </ul>
         <div class="sign-in-container">
             <form class="form-horizontal sign-in-form">

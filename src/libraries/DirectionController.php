@@ -33,7 +33,7 @@ class DirectionController {
 
 
     /**
-     * This function processes the url and grabs the necessary controllers
+     * This function processes the url and instantiates the necessary controllers
      *
      * $params url - an array of urls inputs
      * @params user - the user object
@@ -48,6 +48,9 @@ class DirectionController {
         }
         else
         {
+            //error controller file doesnt get required if the controller exists but method doesnt
+            require_once 'controllers/ErrorController.php';
+
             $currentController = new ErrorController();
             $currentController->index();
         }

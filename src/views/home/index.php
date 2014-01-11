@@ -20,7 +20,7 @@
 
     <div class="lower box">
         <div class="lower-left col-md-4 box">
-            <a href="" >
+            <a href="<?php echo BASEURL . 'signup'; ?>" >
                 <h2> Sign-up to start tracking tasks</h2>
                 <p>oooh the features. They are so good.  </p>
                 <ul>

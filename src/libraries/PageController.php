@@ -11,4 +11,8 @@ class PageController {
     function __construct(){
         $this->view = new View();
     }
+
+    function createModel($modelName){
+        $this->model = new Model();
+    }
 } 
