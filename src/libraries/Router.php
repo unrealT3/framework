@@ -38,9 +38,11 @@ class Router {
                     if(method_exists($controller, $method)){
                         return true;
                     }else{
+                        $this->badRoute();
                         return false;
                     }
                 }else{
+                    $this->badRoute();
                     return false;
                 }
             }else
@@ -57,9 +59,11 @@ class Router {
                     if(method_exists($controller, $method)){
                         return true;
                     }else{
+                        $this->badRoute();
                         return false;
                     }
                 }else{
+                    $this->badRoute();
                     return false;
                 }
             } else{
@@ -75,6 +79,7 @@ class Router {
                 }
                 else
                 {
+                    $this->badRoute();
                     return false;
                 }
             }

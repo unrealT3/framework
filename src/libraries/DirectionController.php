@@ -48,8 +48,6 @@ class DirectionController {
         }
         else
         {
-            //error controller file doesnt get required if the controller exists but method doesnt
-            require_once 'controllers/ErrorController.php';
 
             $currentController = new ErrorController();
             $currentController->index();
