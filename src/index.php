@@ -10,8 +10,9 @@ require_once 'libraries/Router.php';
 require_once 'libraries/DirectionController.php';
 require_once 'libraries/View.php';
 require_once 'libraries/Model.php';
+require_once 'libraries/Database.php';
 //$libraryFiles = array("Router", "PageController", "DirectionController", "View", "Model");
-$configFiles = array("Paths");
+$configFiles = array("Paths", "Database");
 
 //load files
 $fileLoader = new FileLoader();

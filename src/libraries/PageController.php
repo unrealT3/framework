@@ -13,6 +13,8 @@ class PageController {
     }
 
     function createModel($modelName){
-        $this->model = new Model();
+        $fileLoader = new FileLoader();
+        $fileLoader->loadModelFile($modelName);
+        $this->model = new $modelName();
     }
 } 

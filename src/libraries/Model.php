@@ -10,7 +10,7 @@
 class Model{
 
     function __construct(){
-        echo 'test';
+        $this->db = new Database();
     }
 }
 

@@ -44,11 +44,21 @@ class DirectionController {
 
         if($this->router->doesRouteExist($url)){
             $currentController = new $url[0];
-            $currentController->index();
+            if(isset($url[1])){
+                if(isset($url[2])){
+                    $currentController->$url[1]($url[2]);
+                }
+                else{
+                    $currentController->$url[1]();
+                }
+
+            }
+            else{
+                $currentController->index();
+            }
         }
         else
         {
-
             $currentController = new ErrorController();
             $currentController->index();
         }
