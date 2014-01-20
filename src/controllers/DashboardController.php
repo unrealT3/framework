@@ -10,9 +10,18 @@ class DashboardController extends PageController{
 
     function __construct(){
         parent::__construct();
+        parent::authenticate();
     }
 
     function index(){
         $this->view->render('dashboard/index');
+    }
+
+    function logout(){
+        $this->view->render('dashboard/index');
+        $session = new Session();
+        $session->init();
+        $session->destroy();
+        header('Location: ../home');
     }
 }

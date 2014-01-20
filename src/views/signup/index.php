@@ -2,23 +2,70 @@
 
 <div class="main row">
     <div class="col-md-12">
-        <h1>Sign Up</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor faucibus massa et cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum et erat eget cursus.
-            Phasellus viverra suscipit justo, id convallis metus placerat sodales. Sed consequat pellentesque consectetur. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin ac feugiat
-            dolor. Vivamus porta arcu ac elit iaculis laoreet. Vestibulum in rhoncus nunc. Nunc at quam et neque rhoncus posuere. Etiam lobortis non nisl id ultricies. Nunc bibendum odio vulputate nisl
-            condimentum adipiscing. Integer et orci ut nibh tempor lacinia in id turpis. Ut varius est augue, eget molestie mi scelerisque vel. In faucibus condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris molestie rhoncus erat vel blandit. Donec dignissim euismod lorem, in laoreet nisi posuere eu. In semper tempus nibh,
-            id eleifend turpis viverra quis. Proin eros sapien, volutpat vel molestie at, aliquet non lectus. Morbi quis dui libero. Nam bibendum hendrerit nisi. Pellentesque quis sapien suscipit,
-            molestie arcu nec, rutrum nulla. </p>
 
-        <form action="<?php echo BASEURL . 'signup/signupSubmit'; ?>" method="post">
-            <label>Email</label><input type="text" name="email" required /><br />
-            <label>Password</label><input type="password" name="password" required /><br />
-            <label>Confirm Password</label><input type="password" name="confirmPassword" required /><br />
-            <label>First Name</label><input type="text" name="firstName" required /><br />
-            <label>Last Name</label><input type="text" name="lastName" required/><br />
-            <label>Phone Number</label><input type="text" name="phone" required/><br />
-            <label></label><input type="submit" name="submit" />
-        </form>
+        <div class="signup-form col-md-4">
+            <form role="form" class="form-vertical" action="<?php echo BASEURL . 'signup/signupSubmit'; ?>" method="post">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input class="form-control" type="text" name="email" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input class="form-control" type="password" name="password" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input class="form-control" type="password" name="confirmPassword" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input class="form-control" type="text" name="firstName" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input class="form-control" type="text" name="lastName" required/>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input class="form-control" type="text" name="phone" required/>
+                </div>
+
+                <input class="btn btn-primary" type="submit" name="submit" value="Sign Up" />
+            </form>
+        </div>
+
+        <div class="signup-promotion  col-md-8">
+            <h1>Sign Up</h1>
+            <p> Sign up now to get access to all of the features. The features are so swell that you will be very
+            pleased to use the service. You be so happy and will pay us whatever we ask. Wow, such service. All the critics are saying that
+                this is just the best thing thats ever happened since blueberry pie. If you don't agree well fuck you. Thanks and GLHF.
+                Sign up now to get access to all of the features. The features are so swell that you will be very
+                pleased to use the service. You be so happy and will pay us whatever we ask. Wow, such service. All the critics are saying that
+                this is just the best thing thats ever happened since blueberry pie. If you don't agree well fuck you. Thanks and GLHF.</p>
+
+
+            <p> Sign up now to get access to all of the features. The features are so swell that you will be very
+                pleased to use the service. You be so happy and will pay us whatever we ask. Wow, such service. All the critics are saying that
+                this is just the best thing thats ever happened since blueberry pie. If you don't agree well fuck you. Thanks and GLHF.
+                Sign up now to get access to all of the features. The features are so swell that you will be very
+                pleased to use the service. You be so happy and will pay us whatever we ask. Wow, such service. All the critics are saying that
+                this is just the best thing thats ever happened since blueberry pie. If you don't agree well fuck you. Thanks and GLHF.</p>
+
+
+            <p> Sign up now to get access to all of the features. The features are so swell that you will be very
+                pleased to use the service. You be so happy and will pay us whatever we ask. Wow, such service. All the critics are saying that
+                this is just the best thing thats ever happened since blueberry pie. If you don't agree well fuck you. Thanks and GLHF.
+                Sign up now to get access to all of the features. The features are so swell that you will be very
+                pleased to use the service. You be so happy and will pay us whatever we ask. Wow, such service. All the critics are saying that
+                this is just the best thing thats ever happened since blueberry pie. If you don't agree well fuck you. Thanks and GLHF.</p>
+
+        </div>
+
 
     </div>
 </div>

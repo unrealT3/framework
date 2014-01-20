@@ -11,6 +11,8 @@ require_once 'libraries/DirectionController.php';
 require_once 'libraries/View.php';
 require_once 'libraries/Model.php';
 require_once 'libraries/Database.php';
+require_once 'libraries/Session.php';
+require_once 'libraries/User.php';
 //$libraryFiles = array("Router", "PageController", "DirectionController", "View", "Model");
 $configFiles = array("Paths", "Database");
 

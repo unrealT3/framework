@@ -10,23 +10,42 @@
 
 <body>
 
+<?php
+$user = $this->user;
+$userLoggedIn = false;
+if($user['id']){$userLoggedIn = true;};
+?>
+
 <header>
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <ul>
             <li><a href="<?php echo BASEURL . 'home';?>">Home</a></li>
             <li><a href="<?php echo BASEURL . 'help';?>">Help</a></li>
-            <li><a href="<?php echo BASEURL . 'login';?>">Login</a></li>
+
+            <?php if($user['id']){?>
+                <li><a href="<?php echo BASEURL . 'dashboard';?>">Dashboard</a></li>
+            <?php }
+            else { ?>
+                <li><a href="<?php echo BASEURL . 'signup';?>">Sign Up</a></li>
+            <?php } ?>
+
+
         </ul>
-        <div class="sign-in-container">
-            <form class="form-horizontal sign-in-form">
-                <label for="email">Email:</label>
-                <input type="text" name="email" />
-                <label for="password">Password:</label>
-                <input type="password" name="password" />
-                <input type="submit" value="sign in" class="btn btn-success">
-            </form>
-        </div>
+        <?php if(!$userLoggedIn){ ?>
+            <div class="sign-in-container">
+                <form class="form-horizontal sign-in-form" action="<?php echo BASEURL . 'login/loginSubmit'; ?>" method="post">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" required />
+                    <label for="password">Password</label>
+                    <input type="password" name="password" required />
+                    <label></label><input type="submit" class="btn btn-success"name="submit"  value="Login" />
+                </form>
+            </div>
+        <?php } else{ ?>
+            <a href="dashboard/logout" class="btn btn-danger logout-button">Logout</a>
+        <?php } ?>
+
     </nav>
 </header>
 

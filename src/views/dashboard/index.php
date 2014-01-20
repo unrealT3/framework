@@ -1,14 +1,18 @@
-
+<?php
+$user = $this->user;
+?>
 
 <div class="main row">
     <div class="col-md-12">
-        <h1>[Username]'s Dashboard</h1>
+        <h1><?php echo $user['firstName']; ?>'s Dashboard</h1>
 
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris molestie rhoncus erat vel blandit. Donec dignissim euismod lorem, in laoreet nisi posuere eu. In semper tempus nibh,
             id eleifend turpis viverra quis. Proin eros sapien, volutpat vel molestie at, aliquet non lectus. Morbi quis dui libero. Nam bibendum hendrerit nisi. Pellentesque quis sapien suscipit,
             molestie arcu nec, rutrum nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris molestie rhoncus erat vel blandit. Donec dignissim euismod lorem, in laoreet nisi posuere eu. In semper tempus nibh,
             id eleifend turpis viverra quis. Proin eros sapien, volutpat vel molestie at, aliquet non lectus. Morbi quis dui libero. Nam bibendum hendrerit nisi. Pellentesque quis sapien suscipit,
             molestie arcu nec, rutrum nulla.</p>
+
+
     </div>
 </div>
 
@@ -46,5 +50,6 @@
         </a>
     </div>
 </div>
+
 
 

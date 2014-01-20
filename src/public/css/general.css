@@ -32,6 +32,8 @@ body header {
     float: right; }
     body header .sign-in-container .sign-in-form {
       color: white; }
+  body header .logout-button {
+    float: right; }
 body .content-container {
   padding-top: 85px; }
   body .content-container .main {

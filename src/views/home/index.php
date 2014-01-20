@@ -1,8 +1,10 @@
-
+<?php
+$user = $this->user;
+?>
 
     <div class="main row">
         <div class="col-md-12">
-            <h1>Welcome to Task Tracker</h1>
+            <h1>Welcome to Task Tracker<?php if($user['firstName']) {echo ', ' . $user['firstName'];} ?></h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor faucibus massa et cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum et erat eget cursus.
                 Phasellus viverra suscipit justo, id convallis metus placerat sodales. Sed consequat pellentesque consectetur. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin ac feugiat
                 dolor. Vivamus porta arcu ac elit iaculis laoreet. Vestibulum in rhoncus nunc. Nunc at quam et neque rhoncus posuere. Etiam lobortis non nisl id ultricies. Nunc bibendum odio vulputate nisl

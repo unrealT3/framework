@@ -24,8 +24,19 @@ class LoginController extends PageController{
 
 
             if($this->model->loginAttempt($email, $password)){
+
+                //grab user data to give ti session
+                $userData = $this->model->getUserData($email);
+
                 //make session
-                //create user object
+                $session = new Session();
+                $session->init();
+                foreach($userData as $attribute => $value){
+                    $session->set($attribute, $value);
+                }
+
+
+
                 //redirect to user dashboard
                 header('Location: ../dashboard');
             }
