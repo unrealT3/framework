@@ -4,7 +4,7 @@ $user = $this->user;
 
 <div class="main row">
     <div class="col-md-12">
-        <h1><?php echo $user['firstName']; ?>'s Dashboard</h1>
+        <h1>Update Profile Info</h1>
 
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris molestie rhoncus erat vel blandit. Donec dignissim euismod lorem, in laoreet nisi posuere eu. In semper tempus nibh,
             id eleifend turpis viverra quis. Proin eros sapien, volutpat vel molestie at, aliquet non lectus. Morbi quis dui libero. Nam bibendum hendrerit nisi. Pellentesque quis sapien suscipit,
@@ -17,7 +17,7 @@ $user = $this->user;
 </div>
 
 <div class="lower box">
-    <div class="lower-left col-md-4 box">
+    <div class="lower-left col-md-6 profile-box">
         <a href="" >
             <h2> My tasks</h2>
             <p>wow. such tasks.  </p>
@@ -30,16 +30,7 @@ $user = $this->user;
         </a>
     </div>
 
-    <div class="lower-mid col-md-4 box">
-        <a href="">
-            <h2>Other Shit</h2>
-            <p>some shit cool wow </p>
-            <p> words and more words make sentence </p>
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris molestie rhoncus erat vel blandit. Laoreet nisi posuere eu. In semper tempus nibh,</p>
-        </a>
-    </div>
-
-    <div class="lower-right col-md-4 box">
+    <div class="lower-right col-md-6 profile-box">
 
         <a href="dashboard/profile">
             <h2>Change My Info</h2>

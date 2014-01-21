@@ -17,6 +17,10 @@ class DashboardController extends PageController{
         $this->view->render('dashboard/index');
     }
 
+    function profile(){
+        $this->view->render('dashboard/profile');
+    }
+
     function logout(){
         $this->view->render('dashboard/index');
         $session = new Session();
