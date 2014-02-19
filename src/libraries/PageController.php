@@ -4,6 +4,10 @@
  * User: Trevor
  * Date: 03/01/14
  * Time: 10:35 PM
+ *
+ * Base PageController
+ *
+ * Creates a View and a User
  */
 
 class PageController {

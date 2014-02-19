@@ -4,6 +4,8 @@
  * User: Trevor
  * Date: 03/01/14
  * Time: 10:50 PM
+ *
+ * Use parent::authenticate() in the construct if the page requires user authentication
  */
 
 class DashboardController extends PageController{
